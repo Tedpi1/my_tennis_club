@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<ul>
+    {% for x in mymembers  %}
+        <li>{{forloop.revcounter0}}. {{x.first_name}} {{x.last_name}}</li>
+
+    {%endfor%}
+</ul>
+
+{% if greeting == 1 %}
+    <h1>Hello</h1>
+{% elif greeting == 2 %}
+    <h1>Welcome</h1>
+{% else %}
+    <h1>Goodbye</h1>
+{% endif %} 
+
+<p>In views.py you can see what the fruits variable looks like.</p>
+
+</body>
+</html>
